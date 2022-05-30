@@ -2,7 +2,7 @@ import React from "react";
 import Button from "./Button";
 import "./Task.css";
 
-const Task = (props) => {
+const Task = (props) => {//destructure the props
   const taskDelete = () => {
     props.onDelete(props.idValue);
   };
