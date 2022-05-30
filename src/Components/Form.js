@@ -3,7 +3,7 @@ import "./Form.css";
 import Input from "../Components/Input";
 import Button from "../Components/Button";
 
-const Form = (props) => {
+const Form = (props) => {//destructure the prop
   return (
     <div className={props.formData.formClsName}>
       <Input
