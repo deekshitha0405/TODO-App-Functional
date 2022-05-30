@@ -11,7 +11,8 @@ const Update = () => {
 
   const inputHandler = (val) => {
     setTodoAppData((prevState) => {
-      return { ...prevState, inputTask: val };
+      return { ...prevState, inputTask: val };//Refactor the code as updated in home.js
+      
     });
   };
 
