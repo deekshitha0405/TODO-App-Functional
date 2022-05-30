@@ -19,7 +19,7 @@ const Home = () => {
 
   const inputHandler = (val) => {
     setTodoAppData((prevState) => {
-      return { ...prevState, inputTask: val };
+      return { ...prevState, inputTask: val };//code can be refactored here eg:setdata({...data,newData}) return is not needed
     });
   };
 
