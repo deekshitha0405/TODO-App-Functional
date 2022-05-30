@@ -1,7 +1,7 @@
 import React from "react";
 import "./Input.css";
 
-const Input = (props) => {
+const Input = (props) => {//desturcture the props
   return (
     <div>
       <input
