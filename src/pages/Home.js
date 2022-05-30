@@ -72,6 +72,10 @@ const Home = () => {
     navigate("/update");
   };
 
+  const validateDate = (date) => {
+    return new Date(date).getDate() < new Date().getDate() ? true : false;
+  };
+
   const todoInput = {
     onFieldChange: inputHandler,
     className: "inputField",
@@ -93,7 +97,7 @@ const Home = () => {
         {todoAppData.tasks
           .filter((task) => task.title.includes(todoAppData.inputTask))
           .map((val) =>
-            new Date(val.created).getDate() < new Date().getDate() ? (
+            validateDate(val.created) ? (
               ""
             ) : (
               <Task
