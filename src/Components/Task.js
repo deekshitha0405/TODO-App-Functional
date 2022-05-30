@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 import "./Task.css";
 
 const Task = (props) => {
@@ -13,16 +14,12 @@ const Task = (props) => {
   return (
     <div className="taskPannel">
       <h3>{props.taskName}</h3>
-      <AddButton
+      <Button
         onAddClick={props.didUpdated ? () => {} : taskUpdate}
         btnValue={props.didUpdated ? "Updated" : "Edit"}
         btnClass="btnEdit"
       />
-      <AddButton
-        onAddClick={taskDelete}
-        btnValue="Delete"
-        btnClass="btnDelete"
-      />
+      <Button onAddClick={taskDelete} btnValue="Delete" btnClass="btnDelete" />
     </div>
   );
 };
