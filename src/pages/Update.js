@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Form from "../Components/Form";
+import "./Update.css";
 
 const Update = () => {
   const navigate = useNavigate();
@@ -44,6 +45,7 @@ const Update = () => {
     onAddClick: updateHandler,
     btnValue: "Update",
     btnClass: "taskUpdateBtn",
+    formClsName: "",
   };
 
   return (

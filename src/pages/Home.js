@@ -78,6 +78,7 @@ const Home = () => {
     onAddClick: addHandler,
     btnValue: "Add",
     btnClass: "taskAddBtn",
+    formClsName: "inputAlign",
   };
 
   return (

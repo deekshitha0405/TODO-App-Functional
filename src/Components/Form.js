@@ -1,10 +1,11 @@
 import React from "react";
+import "./Form.css";
 import Input from "../Components/Input";
 import Button from "../Components/Button";
 
 const Form = (props) => {
   return (
-    <div>
+    <div className={props.formData.formClsName}>
       <Input
         onFieldChange={props.formData.onFieldChange}
         fieldVal={props.fieldVal}
